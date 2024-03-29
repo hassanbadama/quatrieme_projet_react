@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: black;
+    width: 100%;
+    color: white;
+}
+@media (max-width: 450px) {
+    .footer{
+        margin-top: 30px;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,60 @@
+
+.collabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px 0px 24px;
+    background: rgba(255, 0, 0, 0.758);
+    width: 74%;
+    border-radius: 4px;
+    height: 48px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin: auto;
+    margin-top: 38px;
+}
+.collab_paragraphe {
+    width: 77%;
+    margin: auto;
+    background: lavenderblush;
+    font-family: sans-serif;
+    padding: 1px;
+    border-radius: 5px;
+}
+.collab_paragraphe p{
+    padding: 12px;
+    color: red;
+}
+
+.image-collabs {
+    width: 18px;
+    height: 24px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.changeImage{
+    transform: rotate(90deg);
+}
+.cache-paragraphe {
+    display: none;
+}
+.fontBlanc{
+    background: lavenderblush;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tab div {
+    width: 91%;
+    margin: auto;
+    border-radius: 7px;
+}
+
+@media (max-width: 400px) {
+    .titre_location {
+        margin: -96px 57px;
+    }
+}

@@ -1,0 +1,39 @@
+.entete{
+    justify-content: space-between;
+    display: flex;
+    margin: 20px 68px;
+}
+.entete li{
+    list-style: none;
+    display: flex;
+}
+.font {
+    color: red;
+    padding-left: 81px;
+    font-size: 28px;
+}
+.enleveLigne{
+    text-decoration: none;
+}
+.entete1{
+    display: flex;
+}
+@media (max-width: 450px) {
+    
+.image{
+    width: 60px;
+    height: 50px;
+}
+.entete {
+  
+    margin: 5px 12px;
+}
+.font {
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+
+
+
+}
