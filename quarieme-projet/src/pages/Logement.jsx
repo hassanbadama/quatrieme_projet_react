@@ -41,7 +41,6 @@ export const Logement = ()=>{
                 mot_cle={fin["Mots clés"]}
                 NbreEtole={fin.note}
              />
-
             <div className="tab">
                 <div className="tab1" id="collab_logement">
                 < Collabs

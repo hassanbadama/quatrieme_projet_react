@@ -5,6 +5,7 @@ import Card from "../composants/Card";
 import image_banner from "../images/about.png"
 import image from "../images/g.png"
 
+
 const Apropos = ()=>{
     return(
         <div>
