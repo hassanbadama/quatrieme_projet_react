@@ -1,12 +1,11 @@
 import React from "react";
 import { Slide } from "../composants/Slide";
 import { useParams } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
 import tab from "../fichier.json"
 import Info from "../composants/Info";
 import Collabs from "../composants/Collabs";
 import img1 from "../images/g.png"
+import { Navigate } from "react-router-dom";
 
 
 export const Logement = ()=>{
@@ -25,6 +24,9 @@ export const Logement = ()=>{
     // console.log("barka");
     // console.log(fin);
     const fin = tab.find(e=>e.identifiant === id)
+    if(!fin){
+      return < Navigate to="*" /> 
+    }
 
     return(
         <div>

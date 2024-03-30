@@ -1,7 +1,6 @@
 import React from "react";
 import Collabs from "../composants/Collabs";
 import Banner from "../composants/Banner";
-import Card from "../composants/Card";
 import image_banner from "../images/about.png"
 import image from "../images/g.png"
 

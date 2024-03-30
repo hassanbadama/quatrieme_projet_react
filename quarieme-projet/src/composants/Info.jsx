@@ -17,7 +17,7 @@ const Info = ({titre,location,photo,nom, mot_cle, NbreEtole})=>{
         <div className="flex">
             <div className="flex_span">
                 <span className="flex_span1">{titre}</span>
-                <span> {location} </span>
+                <span className="sous_titre"> {location} </span>
             </div>
             <div className="flex1">
                <div className="flex2">

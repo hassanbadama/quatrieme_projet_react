@@ -31,7 +31,7 @@
 .flex {
     display: flex;
     justify-content: space-between;
-    width: 1313px;
+    width: 91%;
     margin: 230px 63px 21px auto;
     color: red;
     font-family: sans-serif;
@@ -87,7 +87,7 @@
 .slide_etoile {
     display: flex;
     justify-content: space-between;
-    width: 1313px;
+    width: 91%;
     margin: auto;
     
 }
@@ -118,19 +118,42 @@
 @media (max-width: 350px) {
 
    .slide_image_defile {
-    width: 30px;
-    height: 38px;
+        width: 30px;
+        height: 50px;
+        
 }
 
 .slide_defile_image {
     width: 86%;
+     
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 28px;
 }
 
 
 }
 
 @media (max-width: 500px) {
-
+   .sous_titre {
+        font-size: 26px;
+    }
+    .slide_image {
+        width: 91%;
+        height: 250px;
+    }
+    .slide_defile_image {
+        margin: -125px 68px -113px auto;
+    }
+    .slide_defile_image {
+        margin-left: 20px;
+    }
+    .slide_image_defile {
+        width: 30px;
+        height: 50px;
+        
+}
 .flex {
     width: 100%;
     margin: 230px 63px 21px auto;
@@ -165,7 +188,6 @@
     margin: 5px auto;
     border-radius: 7px;
 }
-
 }
 
 @media (max-width: 900px) {
@@ -178,6 +200,10 @@
     }
     .slide_defile_image {
         width: 86%;
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+  
     }
  
  }

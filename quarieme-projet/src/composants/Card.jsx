@@ -2,9 +2,8 @@ import React from "react";
 import "../style/banner.css"
 import image from "../images/about.png"
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import { useState } from "react";
-import tab from "../fichier.json"
+
+import Tab from "../fichier.json"
 
 
 
@@ -21,27 +20,22 @@ const Card = ()=>{
   //     });
   // },[])
   
-  console.log(tab);
+ 
 
     return(
-        <div>
            <div className="cad-image-flex">
            {
-                tab.map((tab)=>{
-                    return(
-                      <Link  to = {`/logement/${tab.identifiant}`}> 
-                      <div className="card-images">
+                Tab.map((tab, i)=>( 
+                     <Link  to = {`/logement/${tab.identifiant}`}> 
+                      <div key={i} className="card-images">
                           <img className="card-image" src={tab.cover} alt="" /> 
-                         
                           <p className="titre_location">{tab.title}</p>
-                        </div>
+                      </div>
                       </Link> 
-                    )
-                })
+                    
+                ))
              }
            </div>
-           
-        </div>
     )
 }
 export default Card
