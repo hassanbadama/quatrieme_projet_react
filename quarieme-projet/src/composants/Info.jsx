@@ -1,7 +1,6 @@
 import React from "react";
 import "../style/Slide.css"
 import { Link } from "react-router-dom";
-import etole from "../images/etoile.png"
 import { useState } from "react";
 
 
@@ -32,17 +31,17 @@ const Info = ({titre,location,photo,nom, mot_cle, NbreEtole})=>{
             <ul className="slide-liste">
               
                 {
-                    mot_cle.map((el)=>{
-                        return(<li> <Link className=""  to = "">{el}</Link> </li>)
+                    mot_cle.map((el , i)=>{
+                        return(<li key={i} > <Link className=""  to = "">{el}</Link> </li>)
 
                     })
                 }
             </ul>
             <div className="flex_etoile">
                  <span> </span>
-                {tab.map((el)=>{
+                {tab.map((el, k)=>{
                     return(
-                    NbreEtole >=  el?<span className="colorer" > <i class=" fa-solid fa-star"></i> </span>:<span className="Noncolorer" > <i class=" fa-solid fa-star"></i> </span>
+                    NbreEtole >=  el?<span key={k} className="colorer" > <i className=" fa-solid fa-star"></i> </span>:<span key={k} className="Noncolorer" > <i className=" fa-solid fa-star"></i> </span>
                     ) 
 
                 })} 
